@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #282c34;
 }
 
 .App-logo {
@@ -19,13 +20,95 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
+.App-body {
+  background-color: #282c34;
+  align-self: start;
+  font-size: calc(5px + 1vmin);
+  color: white;
+  padding-left: 10px;
+  padding-top: 12px;
+}
+
 .App-link {
   color: #61dafb;
+}
+
+.Tabs {
+text-align: center;
+width: 50vw;
+height: 30px;
+background: rgb(48, 48, 48);
+border-radius: 0.2rem;
+border-bottom-color: rgb(168, 168, 168);
+border-bottom-width: 5px;
+}
+.TabsSelected {
+
+  text-align: center;
+  width: 50vw;
+  height: 30px;
+  background:  rgb(48, 48, 48);
+  border-radius: 0.2rem;
+  border-bottom-color: rgb(72, 51, 189);
+  border-bottom-width: 5px;
+}
+
+.TabText {
+  font-size: calc(10px + 1vmin);
+  color: white;
+}
+.body {
+  overflow-x: hidden;
+}
+.item-row {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  width: 90vw;
+}
+.DollarTextBox {
+
+  width: 80px;
+  height: 30px;
+  text-align: right;
+  font-size: calc(10px + 1vmin);
+}
+.ItemTextBox {
+
+  width: 60vw;
+  height: 30px;
+  text-align: left;
+  font-size: calc(10px + 1vmin);
+}
+.PersonTextBox {
+
+  width: 60vw;
+  height: 30px;
+  text-align: left;
+  font-size: calc(10px + 1vmin);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  white-space: nowrap; /* keep cells on one line */
+  background-color: black;
+}
+th, td {
+  border: 1px solid #ddd; /* Adds a 1px solid border to cells */
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  overflow-x: hidden; /* prevent white space overflow */
+  overscroll-behavior-y: contain; /* Prevent pull-to-refresh */
+  overscroll-behavior: contain;   /* Also helps block iOS bounce */
+  touch-action: pan-x pan-y;      /* Allow scroll but block gestures */
 }
 
 @keyframes App-logo-spin {
